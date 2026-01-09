@@ -1,0 +1,51 @@
+Empezar un proyecto:
+npm create vite@latest react-list-crud -- --template react
+
+-Src 
+   componentes
+   assets (imagenes/videos)
+
+CARPETAS
+Para poder crear las carpetas dentro de los componentes:
+npm install --save-dev create-react-component-folder
+
+CREANDO CARPETAS
+npx crcf src/components/Lista -j  --notest -f
+
+
+HACER ESTRUCTURA DE LOS COMPONENTES (explicando el por que)
+
+->LISTA
+    -->FORM
+    -->ITEMSLIST
+        ->ITEM
+npx crcf src/components/Lista -j  --notest -f
+npx crcf src/components/Lista/Form ItemsList -j  --notest -f
+npx crcf src/components/Lista/ItemsList/Item -j  --notest -f
+
+
+***App.jsx****
+Se importan los componentes principales -> en este caso es Lista -> Dentro de Lista.jsx, importaremos los demás componentes
+
+****Lista.jsx***
+-Importar sus componentes
+-Usar useState (manejar estados-> en este caso del array)
+-Manejamos las funciones de añadir, eliminar y editar.
+-Pasamos estas funciones a sus componentes hijos
+
+****ItemsLits.jsx***
+No tiene estado propio; solo recibe datos y funciones del componente padre.
+- Recibe props:
+items → array de objetos que queremos mostrar.
+onDelete → función para borrar un item (pasada desde el padre Lista.jsx).
+onUpdate → función para editar un item (también pasada desde el padre Lista.jsx).
+
+****Item.jsx***
+Tiene estados para poder editar el elemento de la lista
+-Recibe por props:
+Item
+onDelete
+onUpdate
+
+Tenemos que hacer lógica de editado para que se actualice el array de la lista.jsx
+
