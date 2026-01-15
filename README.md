@@ -105,3 +105,22 @@ const newItem = {id:2,text:"Mundo"};
 const updatedItems = [...items, newItem];
 console.log(updatedItems);
 // [{id:1,text:"Hola"}, {id:2,text:"Mundo"}]
+
+# .reduce() 
+- Reduce un array a un solo valor aplicando una función “acumuladora” a cada elemento del array.
+- Suma de de los numeros de un array
+
+# .flat()
+- convierte [[1,2,3],[4,5,6],[7,8,9]] en [1,2,3,4,5,6,7,8,9]
+
+# .push()
+- Método de los arrays que sirve para agregar uno o varios elementos al final de un array.
+
+## Suma de  1 array
+- FOR (clásico)
+- FOR EACH
+- .REDUCE()
+
+## Suma de varios arrays
+- .FLAT() + .REDUCE()
+- FOR..OF
