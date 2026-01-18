@@ -56,7 +56,7 @@ function nombre(param1, param2) {
 - Estructura alternativa: operador ternario condicion ? expr1 : expr2
 ## Métodos
 # map() 
-Sirve para crear un nuevo arreglo transformando cada elemento del array original.
+Sirve para crear un nuevo array transformando cada elemento del array original.
 - 👉 No busca,
 - 👉 no filtra,
 - 👉 no modifica el original.
